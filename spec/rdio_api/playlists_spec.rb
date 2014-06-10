@@ -36,7 +36,7 @@ describe RdioApi::Client do
     
     describe "'getPlaylists'" do
       before do
-        stub_post.with(:body => {:method => 'getPlaylists'}).to_return(:body => fixture("getPlaylists.json"))
+        stub_post.with(:body => {:method => 'getUserPlaylists'}).to_return(:body => fixture("getPlaylists.json"))
       end
       
       it "should return the playlist created in 'createPlaylist'" do
